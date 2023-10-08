@@ -17,6 +17,10 @@ nav a {
     text-align: center;
 }
 
+#hero-img {
+    width: 100%;
+}
+
 .button-box {
     text-align: center;
 }
