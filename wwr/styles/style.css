@@ -249,6 +249,64 @@ footer .social-img {
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+/*Rivers Page*/
+
+#rivers-title {
+    color: #F08756;
+    text-align: center;
+    font-size: 42px;
+}
+
+.rivers-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.rivers-section {
+    grid-column: 1/11;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.river-img {
+    grid-column: 1/4;
+}
+
+.river-info {
+    grid-column: 5/11;
+    margin-left: -10%;
+}
+
+.river-img img {
+    width: 100%;
+}
+
+.river-info h2 {
+    background-color: #0163F7;
+    color: white;
+    text-align: left;
+    font-size: 24px;
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 3%;
+}
+
+.river-info p {
+    font-size: 16px;
+    text-align: left;
+}
+
+.last-river-section {
+    margin-bottom: -10px;
+}
+
+.salmon-river-section, .gray-canyon-section {
+    margin-bottom: 5%;
+}
+
+#rivers-title {
+    padding: 1.5%;
+}
 
 /* Media Query */
 
@@ -291,5 +349,30 @@ footer .social-img {
     }
     footer {
         margin-top: 25px;
+    }
+
+    /*Rivers Page*/
+    .rivers-section {
+        display: block;
+    }
+
+    .river-info {
+        margin-left: 0;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .river-info h2 {
+        font-size: 18px;
+        width: 96%;
+        margin-bottom: 8%;
+    }
+
+    .river-img {
+        padding: 2%;
+    }
+
+    #rivers-title {
+        font-size: 28px;
     }
 }
