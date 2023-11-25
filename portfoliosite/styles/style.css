@@ -1,0 +1,119 @@
+@import url('https://use.typekit.net/wji6qip.css');
+
+body {
+    font-family: arboria, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+
+#logo_link {
+    grid-column: 2/4;
+}
+.logo {
+    width: 65px;
+    padding-top: 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    grid-column: 9/12;
+    margin-top: 10%;
+    font-family: circe, Helvetica, sans-serif;
+    padding-right: 3%;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #231F20;
+}
+
+.introduction {
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#hello-banner {
+    text-align: center;
+    padding: 7%;
+}
+
+#hello-banner img {
+    width: 350px;
+}
+
+.intro-statement {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#first-intro-statement {
+    grid-column: 2/7;
+    margin-right: 5%;
+}
+
+#second-intro-statement {
+    grid-column: 7/12;
+    margin-left: 5%;
+}
+
+.portfolio-display {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.padding-for-images {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 2/12;
+    margin: 7.5% 0 7.5% 0;
+}
+
+.padding-for-images div {
+    grid-column: span 3;
+    margin: 2.5%;
+}
+
+.portfolio-display div img {
+    width: 100%;
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 2.5%;
+}
+
+footer p {
+    grid-column: 2/5;
+    margin: 0;
+}
+
+.footer-nav {
+    grid-column: 6/8;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color:#231F20;
+    
+}
+
+.social {
+    grid-column: 10/12;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social img {
+    width: 50px;
+}
+
