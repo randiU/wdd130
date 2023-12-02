@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Randi Umphrey Design</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
+    <header id="navbar">
         <a href="index.html" id="logo_link">
             <img class="logo" src="images/logo.png" alt="Randi Umphrey Design Logo">
         </a>
@@ -16,19 +17,20 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <main>
+    <main class="content content-grid">
         <h1>About</h1>
-        <section>
-            <div>
+        <section class="content-images">
+            <div class="portrait-img">
                 <img src="images/randiPic.jpg" alt="Randi Umphrey Picture">
             </div>
-            <div>
+            <div class="utah-img">
                 <img src="images/utah.png" alt="Utah">
             </div>
         </section>
-        <article>
+        <article class="content-text">
+            
             <p>
-                Hey there! I'm Randi Umphrey, a versatile graphic designer with a strong foundation in programming. At 34 years old, I bring a unique blend of technical expertise and creative flair to the world of design. My journey began with a deep fascination for coding and problem-solving, which eventually led me to explore the vibrant realm of 
+                <b>Hey there! I'm Randi Umphrey,</b> a versatile graphic designer with a strong foundation in programming. At 34 years old, I bring a unique blend of technical expertise and creative flair to the world of design. My journey began with a deep fascination for coding and problem-solving, which eventually led me to explore the vibrant realm of 
                 graphic design. 
             </p>
             <p>
@@ -39,22 +41,38 @@
             </p>
         </article>
     </main>
-    <footer>
+    <footer id="about-footer">
         <p>Randi Umphrey Design &copy; 2023</p>
-            <p><a href="contact.html">Contact</a></p>
-            <p><a href="index.html">Work</a></p>
-            <p><a href="https://randiu.github.io/wdd130/portfoliosite/site-plan.html">Site Plan</a></p>
-            <div class="social">
-                <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook-14.jpg" alt="fb icon">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter-15.jpg" alt="twitter icon">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram-16.jpg" alt="instagram icon">
-                </a>
-            </div>
+        <div class="footer-nav">
+            <a href="contact.html">Contact</a>
+            <a href="index.html">Work</a>
+            <a href="https://randiu.github.io/wdd130/portfoliosite/site-plan.html">Site Plan</a>
+        </div> 
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook-14.jpg" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter-15.jpg" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram-16.jpg" alt="instagram icon">
+            </a>
+        </div>
     </footer>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
 </body>
 </html>

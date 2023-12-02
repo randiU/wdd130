@@ -121,7 +121,54 @@ footer p {
     width: 50px;
 }
 
-/** Sticky Navbar **/
+ /***** About *****/
+
+ .content {
+    margin-top: 5%;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.content h1 {
+    grid-column: 7/13;
+    margin: 0;
+    font-family: circe, Helvetica, sans-serif;
+}
+
+.content-text {
+    grid-column: 7/11;
+}
+.content-images {
+    grid-column: 2/7;
+}
+
+.content-images div img {
+    width: 60%;
+}
+
+.utah-img {
+    width: 65%;
+    padding-left: 15%;
+}
+
+.portrait-img {
+    margin-bottom: 5%;
+}
+.content-images div {
+    text-align: center;
+}
+
+#about-footer {
+    margin-top: 10%;
+}
+
+
+/******End About*******/
+
+/***** Sticky Navbar ******/
 
 /* Page content */
 .content {
@@ -133,6 +180,7 @@ footer p {
     position: fixed;
     top: 0;
     width: 100%;
+    filter: drop-shadow(6px 5px 2px #c4c4c4);
   }
   
   /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
@@ -142,3 +190,78 @@ footer p {
   }
 
   /** End Sticky Navbar **/
+
+/**** Media Query ****/
+
+@media screen and (max-width: 900px) {
+
+/*work*/
+header {
+    display: block;
+}
+
+main {
+    font-size: 18px;
+}
+
+#navbar a {
+    display: flex;
+}
+
+#navbar a img {
+    margin: auto;
+}
+
+.intoduction {
+    display: block;
+}
+
+.intro-statement {
+    display: block;
+}
+
+#first-intro-statement, #second-intro-statement {
+    margin: 0;
+}
+
+#hello-banner img{
+    width: 50%;
+}
+
+.portfolio-display {
+    display: block;
+}
+
+.padding-for-images {
+    display: block;
+}
+
+.padding-for-images div {
+    margin: 0;
+    padding: 3%;
+}
+
+.portfolio-display div img {
+   width: 100%;
+}
+
+/*footer*/
+
+footer {
+    display: block;
+}
+
+footer p {
+    text-align: center;
+}
+
+.social {
+    justify-content: center;
+}
+
+.footer-nav {
+    justify-content: center;
+    padding: 2%;
+}
+
+}
