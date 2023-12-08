@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Randi Umphrey Design</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header id="navbar">
@@ -16,62 +17,67 @@
             <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <main class="content">
-        <h1>Contact</h1>
-        <aside>
+    <main class="content-contact">
+        <section class="contact-info">
+          <h1>Contact</h1>
+          <article>
+              <p>
+                  I'm thrilled to connect and explore creative possibilities together. Whether you're looking to revamp your brand identity, need stunning visuals for your project, or simply want to discuss the magic of design, this is the perfect place to start.
+              </p>
+              <p>
+                  Your vision is the canvas; let's collaborate and turn ideas into captivating designs that speak volumes. Reach out using the form below, and let's embark on an artistic journey together! 
+              </p>
+          </article>
+        </section>
+        <section class="contact-form-content">
+          <aside class="contact-img">
             <img src="images/phone.jpg" alt="Phone booth">
-        </aside>
-        <article>
-            <p>
-                I'm thrilled to connect and explore creative possibilities together. Whether you're looking to revamp your brand identity, need stunning visuals for your project, or simply want to discuss the magic of design, this is the perfect place to start.
-            </p>
-            <p>
-                Your vision is the canvas; let's collaborate and turn ideas into captivating designs that speak volumes. Reach out using the form below, and let's embark on an artistic journey together! 
-            </p>
-        </article>
-        <div>
-            <form action="" method="post">
-                <ul>
-                  <li>
-                    <input type="text" id="first-name" name="first_name" value="First Name"/>
-                  </li>
-                  <li>
-                    <input type="text" id="last-name" name="last_name" value="Last Name"/>
-                  </li>
-                  <li>
-                    <input type="text" id="phone-number" name="phone_number" value="Phone Number"/>
-                  </li>
-                  <li>
-                    <input type="email" id="mail" name="user_email" value="Email"/>
-                  </li>
-                  <li>
-                    <textarea id="msg" name="user_message"></textarea>
-                  </li>
-                  <li class="button">
-                    <button type="submit">Submit</button>
-                  </li>
-                </ul>
-              </form>
-        </div>
-
+          </aside>
+          <div class="contact-form">
+              <form>
+                  <ul class="form-grid">
+                    <li id="form-first-name">
+                      <input type="text" id="first-name" name="first_name" value="First Name">
+                    </li>
+                    <li id="form-last-name">
+                      <input type="text" id="last-name" name="last_name" value="Last Name">
+                    </li>
+                    <li id="form-phone-number">
+                      <input type="text" id="phone-number" name="phone_number" value="Phone Number">
+                    </li>
+                    <li id="form-email">
+                      <input type="email" id="mail" name="user_email" value="Email">
+                    </li>
+                    <li id="form-message">
+                      <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li>
+                      <button class="form-button" type="submit">Submit</button>
+                    </li>
+                  </ul>
+                </form>  
+          </div>
+        </section> 
     </main>
-    <footer>
-        <p>Randi Umphrey Design &copy; 2023</p>
-            <p><a href="contact.html">Contact</a></p>
-            <p><a href="index.html">Work</a></p>
-            <p><a href="https://randiu.github.io/wdd130/portfoliosite/site-plan.html">Site Plan</a></p>
-            <div class="social">
-                <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook-14.jpg" alt="fb icon">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter-15.jpg" alt="twitter icon">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram-16.jpg" alt="instagram icon">
-                </a>
-            </div>
-    </footer>
+    <footer class="contact-footer">
+      <p>Randi Umphrey Design &copy; 2023</p>
+      <div class="footer-nav">
+          <a href="contact.html">Contact</a>
+          <a href="index.html">Work</a>
+          <a href="https://randiu.github.io/wdd130/portfoliosite/site-plan.html">Site Plan</a>
+      </div> 
+      <div class="social">
+          <a href="https://facebook.com" target="_blank">
+              <img src="images/facebook-14.jpg" alt="fb icon">
+          </a>
+          <a href="https://twitter.com" target="_blank">
+              <img src="images/twitter-15.jpg" alt="twitter icon">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+              <img src="images/instagram-16.jpg" alt="instagram icon">
+          </a>
+      </div>
+  </footer>
     <script>
         window.onscroll = function() {myFunction()};
         
